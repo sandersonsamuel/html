@@ -68,6 +68,14 @@ input, select, option{
 
 }
 
+input{
+    padding:0px 5px
+}
+
+textarea{
+    padding:0px 5px
+}
+
 input[type="submit"]{
     width: 80px;
     height: 40px;
@@ -122,4 +130,21 @@ input[value="Limpar"]{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .conteiner{
+        width: 70%;
+    }    
+}
+
+@media screen and (max-width: 700px) {
+    .conteiner{
+        box-shadow: none;
+    }    
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
 }
