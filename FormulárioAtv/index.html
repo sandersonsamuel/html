@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <div id="conteiner-box">
+            <h1>Formulário</h1>
+            <div class="info-box">
+                <div class="info-area">
+                    <label for="input-name">Nome: </label>
+                    <input required id="input-name" type="text">
+                </div>
+                <div class="info-area">
+                    <label for="input-date">Data de Nascimento: </label>
+                    <input required id="input-date" type="date">
+                </div>
+                <div class="info-area">
+                    <label for="input-endereco">Endereço: </label>
+                    <input required id="input-endereco" type="text">
+                </div>
+                <div class="info-area">
+                    <label for="input-numero">Número: </label>
+                    <input required id="input-numero" type="number">
+                </div>
+                <div class="info-area">
+                    <label for="input-cidade">Cidade: </label>
+                    <input required id="input-cidade" type="text">
+                </div>
+                
+                <div class="info-area">
+                    <label for="input-estado">Estado: </label>
+                    <select required name="estado" id="input-estado">
+                        <option selected hidden>- Selecione -</option>
+                        <option class="option" value="AC">Acre</option>
+                        
+                    </select>
+                </div>
+                
+                <div class="info-area">
+                    <label for="input-sexo">Sexo: </label>
+                    <select required name="sexo" id="input-sexo">
+                        <option selected hidden>- Selecione -</option>
+                        <option value="Masc">Masculino</option>
+                        
+                    </select>
+                </div>
+                
+                <div class="info-area" id="info-area-bens">
+                    <label id="label-bens" required>Bens Pessoais:
+
+                        <label for="casa">Casa <input class="input-bens" id="casa" type="checkbox"></label>
+                        <label for="carro">Carro <input class="input-bens" id="carro" type="checkbox"></label>
+                        <label for="moto">Moto <input class="input-bens" id="moto" type="checkbox"></label>
+                        
+                    </label>
+                </div>
+                
+                <div class="info-area" id="info-area-text">
+                    <label for="text-area">Área de Texto: </label>
+                    <textarea name="text-area" id="text-area" cols="30" rows="3"></textarea>
+                </div>
+                <div class="submit-box">
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Limpar">
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

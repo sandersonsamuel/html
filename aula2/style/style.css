@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.conteiner-area{
+    
+    background-color: rgb(0,0,0);
+    height: calc(250vh - 103.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#logo-apple-img{
+    width: 550px;
+    padding: 50px;
+}
+
+#mini-text-event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    color: aliceblue;
+    background-color: transparent;
+    border: solid aliceblue;
+    margin-top: 25px;
+    width: 200px;
+    height: 55px;
+    border-radius: 55px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: aliceblue;
+    color: black;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+}
+
+#mini-text-event p {
+    margin-top: 0; /* Adicione esta linha para remover a margem superior */
+}
+
+
+p {
+    margin: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    width: 987px;
+    text-indent: 36pt;
+    font-size: 32px;
+    padding: 15px 25px 15px 25px;
+    text-align: justify;
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #f5f5f5, #8293a5);
+}
+
+#iphone-15{
+    width: 228px;
+    height: 1165px;
+}
+
+#box-logo{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+}
+#box-logo h1{
+    align-items: center;
+    font-weight: 700;
+    font-size: 60px;
+}
