@@ -11,6 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #e0e0e0;
 }
 
 h1{
@@ -24,13 +25,13 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 40%;
     height: 90%;
     justify-content: center ;
-    background: rgba( 78, 66, 212, 0.15 );
-    backdrop-filter: blur( 5.5px );
-    border-radius: 10px;
-    border:  solid #4E42D4;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 80px #bebebe,
+             -20px -20px 80px #ffffff;
     
 }
 
@@ -72,14 +73,33 @@ input[type="submit"]{
     height: 40px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px;
+}
 
+input[value="Limpar"]:active{
+    box-shadow: -1px -1px 0px 0px rgb(142, 68, 68);
+}
+
+input[value = "Enviar"]:active{
+    box-shadow: -1px -1px 0px 0px rgb(67, 120, 46);
+}
+
+input[type="submit"]::selection{
+
+    width: 10px;
+    
 }
 
 input[value="Enviar"]{
     background-color: rgb(91, 190, 91);
+    box-shadow: 2px 2px 0px 0px rgb(67, 120, 46);
+    
 }
+
 input[value="Limpar"]{
     background-color: rgb(190, 91, 91);
+    box-shadow: 2px 2px 0px 0px rgb(142, 68, 68);
 }
 
 .info-area{
