@@ -11,15 +11,14 @@
 .conteiner-area-1{
     
     background-color: rgb(0,0,0);
-    height: calc(232vh - 103.6px);
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-#logo-apple-img{
-    width: 550px;
+video{
+    width: 500px;
     padding: 50px;
 }
 
