@@ -243,3 +243,93 @@ nav{
 #apple-logo{
     font-size: 45px;
 }
+
+@media screen and (max-width:1050px) {
+
+    #mini-text-event p {
+        width: 50%;
+    }
+
+    video{
+        width: 60%;
+        padding: 0;
+    }
+
+    .conteiner-area-2 img{
+        width: 50%;
+    }
+    img{
+        width: 100%;
+    }
+
+    .text-produto-3 img{
+        width: 100%;
+    }
+
+    
+    
+}
+@media screen and (max-width:700px) {
+
+    .text-produto h3,.text-produto-2 h3,.text-produto-3 h3{
+
+        font-size: 20px;
+
+    }
+
+    #mini-text-event p{
+        width: 80%;
+    }
+
+    .conteiner-area-3{
+        height: auto;
+    }
+    .conteiner-area-2{
+        height: auto;
+    }
+    #iphone-15{
+        margin-top: 0;
+    }
+    .text-produto-3{
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .text-produto,.text-produto-2,.text-produto-3{
+
+        text-align: center;
+    }
+    .text-produto p,.text-produto-2 p,.text-produto-3 p{
+
+        font: 10px;
+    }
+
+    ul a{
+        font-size: 15px;
+    }
+
+    #ver-precos, #saiba-mais{
+
+        font-size: 15px;
+    }
+
+    #watch-9{
+        width: 140px;
+    }
+
+    #paragrafo-1, #paragrafo-2,#paragrafo-3{
+        font-size: 15px;
+    }
+    #iphone-15-pro h1, #iphone-15 h1, #relogio h1{
+
+        font-size: 40px;
+
+    }
+    #apple-logo{
+        font-size: 35px;
+    }
+
+}
