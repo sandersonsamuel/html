@@ -8,10 +8,10 @@
     font-family: Montserrat;
 }
 
-.conteiner-area{
+.conteiner-area-1{
     
     background-color: rgb(0,0,0);
-    height: calc(250vh - 103.6px);
+    height: calc(232vh - 103.6px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,11 +88,6 @@ nav{
     background-image: linear-gradient(90deg, #f5f5f5, #8293a5);
 }
 
-#iphone-15{
-    width: 228px;
-    height: 1165px;
-}
-
 #box-logo{
     color: #f5f5f5;
     display: flex;
@@ -104,7 +99,24 @@ nav{
 #box-logo h1{
     align-items: center;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
+}
+
+.text-produto span{
+    margin-top: 15px;
+}
+
+#ver-precos,#saiba-mais{
+    color: rgb(41, 151, 255);;
+    font-size: 21px;
+}
+
+#ver-precos:hover,#saiba-mais:hover{
+    text-decoration: underline;
+}
+
+#ver-precos{
+    margin-left: 35px;
 }
 
 .text-produto{
@@ -130,4 +142,105 @@ nav{
 }
 .text-produto h1{
     font-size: 56px;
+}
+
+
+#prod-principal{
+    margin: 0;
+    width: 100px;
+}
+/*Conteiner area 2*/
+
+.conteiner-area-2{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-produto-2{
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#iphone-15{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-produto-2 p{
+    color: #86868B;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.text-produto-2 h3{
+    font-size: 28px;
+    margin-top: 6px;
+}
+.text-produto-2 h1{
+    font-size: 56px;
+}
+
+.conteiner-area-2 img{
+    width: 500px;
+}
+
+/*Conteiner area 3*/
+
+.conteiner-area-3{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-produto-3{
+    margin-top: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#relógio{
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-produto-3 p{
+    color: #86868B;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.text-produto-3 h3{
+    font-size: 28px;
+    margin-top: 6px;
+}
+.text-produto-3 h1{
+    font-size: 56px;
+}
+
+.conteiner-area-3 img{
+    width: 950px;
+}
+
+#watch-9{
+    width: 250px;
+}
+
+#apple-logo{
+    font-size: 45px;
 }
