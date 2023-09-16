@@ -279,6 +279,7 @@ nav{
 
     #mini-text-event p{
         width: 80%;
+        text-align: justify;
     }
 
     .conteiner-area-3{
@@ -286,15 +287,18 @@ nav{
     }
     .conteiner-area-2{
         height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     #iphone-15{
-        margin-top: 0;
+        margin-top: 10px;
     }
+
     .text-produto-3{
-        margin-top: 0;
+        margin-top: 10px;
     }
     #iphone-15-pro span{
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
 }
@@ -333,6 +337,9 @@ nav{
     }
     #apple-logo{
         font-size: 35px;
+    }
+    #relógio{
+        padding: 30px 0 30px 0;
     }
 
 }
