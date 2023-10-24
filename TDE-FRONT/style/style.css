@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+nav{
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-pesquisa{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.81);
+    padding: 5px 20px 5px 20px;
+    width: 350px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.box-pesquisa input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+
+.box-login{
+    font-size: 13px;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    background-color: #0474bc;
+    border: none;
+    color: aliceblue;
+}
+
+.box-login:hover{
+    background-color: transparent;
+    border: 1px solid #0474bc;
+    color: #0474bc;
+}
+
+#box-carrinho i{
+    color: #0474bc;
+    font-size: 25px;
+}
+#box-carrinho{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center ;
+    gap:15px;
+    display: flex;
+}
+
+#box-carrinho:hover{
+    color: #0474bc;
+}
+
+nav ul{
+    cursor: pointer;
+    list-style: none;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+li:hover{
+    color: #0474bc;
+}
+
+
+#tds-categorias{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0474bc;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+#tds-categorias:hover{
+    background-color: transparent;
+    border: 1px solid #0474bc;
+    color: #0474bc;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    position: relative;
+    width: 25%;
+    height: auto;
+    transition: 1s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top:29%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.manual-btn, .nav-auto div{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.manual-btn:hover{
+    background-color: #ffffff;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #0474bc;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+
+
+
+
