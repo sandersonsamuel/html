@@ -5,96 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToyStore</title>
     <link rel="stylesheet" href="style/style.css">
+    <!--Abaixo o script para importar os icones usados no site-->
     <script src="https://kit.fontawesome.com/ff98f8ebe6.js" crossorigin="anonymous"></script>
+    <!--Abaixo o Link para o uso da API do Swiper Js, Responsável pelos sliders do site-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Abaixo o link para o uso do framework CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+ 
 </head>
 <body>
-    <nav>
-        
-        <label class="box-logo" for="logo" >
-            <img src="style/img/1Prancheta 1.png" alt="Logo escrito ToyStore" id="logo">
+    <nav class="navbar px-5">
+        <!--NAV BAR ITENS: LOGO, INPUT DE PESQUISA, CARRINHO, E BOTÃO DE LOGIN-->
+        <label class="box-logo nav-item" for="logo" >
+            <img src="style/img/logoTOYSTORE.png" alt="Logo escrito ToyStore" id="logo">
         </label>
-        <label class="box-pesquisa" for="inpt-pesquisa">
+        <label class="box-pesquisa nav-item d- "id="inpt-pesquisa">
             <input type="text" id="inpt-pesquisa">
             <i class="fa-solid fa-magnifying-glass"></i>
         </label>
 
-        <label for="box-carrinho" id="box-carrinho">
+        <label class="nav-item d-flex justify-content-center" for="box-carrinho" id="box-carrinho">
             <i class="fa-solid fa-cart-shopping"></i>
-            <p>Meu Carrinho</p>
+            Meu Carrinho
         </label>
 
-        <label for="button-login" class="box-login">
-            <p>Entre ou Cadastre-se</p>
-            <i class="fa-solid fa-right-to-bracket"></i>
-        </label>
+        <a href="login-page/index.html" class="nav-link nav-item">
+            <label for="btn-cadastro" class="box-login">
+                Entre ou Cadastre-se
+            </label>
+        </a>
 
     </nav>
 
-    <nav id="nav-categorias">
-        <ul>
-            <label id="tds-categorias" onmouseenter="abrirCategorias()"><i class="fa-solid fa-bars"></i><p>Todas as Categorias</p></label>
-            <li>Meninas</li>
-            <li>Meninos</li>
-            <li>Personagens</li>
-            <li>Lançamentos</li>
-            <li>Ofertas</li>
-        </ul>
+    
+    <nav id="nav-categorias" class="container">
+        <!--CATEGORIAS DA NAV BAR SECUNDÁRIA (NAV DAS CATEGORIAS): BOTÃO DE MAIS CATEGORIAS, E OUTRAS CATEGORIAS PRINCIPAIS-->
+
+        <nav class="navbar px-5" id="nav-categorias-itens">
+            <!--NAV BAR ITENS: LOGO, INPUT DE PESQUISA, CARRINHO, E BOTÃO DE LOGIN-->
+            <label class="box-logo nav-item" for="logo" id="tds-categorias" >
+                <i class="fa-solid fa-bars"></i>Todas as categorias
+            </label>
+
+            <a href="#" class="nav-link nav-item">
+                Meninas
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Meninos
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Personagens
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Lançamentos
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Ofertas
+            </a>
+    
+        </nav>
+        
+
         <div id="categorias">
+            <!--DIV QUE ABRE QUANDO PASSA O MOUSE NO LABEL DE TDS-CATERGORIAS, COM DUAS LISTAS CONTENDO AS OUTRAS CATEGORIAS-->
             <ul>
                 <li>Brinquedos Educativos</li>
                 <li>Jogos de Tabuleiro</li>
                 <li>Bonecas e Bonecos</li>
-                <li>Brinquedos de Construção</li>
-                <li>Brinquedos ao Ar Livre</li>
             </ul>
             <ul>
                 <li>Brinquedos Eletrônicos</li>
-                <li>Artes e Ofícios</li>
                 <li>Quebra-cabeças</li>
-                <li>Veículos em Miniatura</li>
                 <li>Fantasias e Acessórios</li>
             </ul>
         </div>
     </nav>
 
-    <div class="slider">
-        <div class="slides">
-            
-            <input type="radio" name="radio-btn" id="radio1" checked>
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-
-            <div class="slide primeiro" id="slide1">
-                <img src="https://toymania.vtexassets.com/assets/vtex.file-manager-graphql/images/537a8636-ece0-4e83-a98f-7d607aaf6307___afd3120c297baa26a48f76f396f3e8ed.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://toymania.vtexassets.com/assets/vtex.file-manager-graphql/images/83537209-9976-4009-a03d-432bca5227a9___02d8b2a5f271b922f52737d48649d4c4.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://toymania.vtexassets.com/assets/vtex.file-manager-graphql/images/22f1a746-06e6-457f-af96-437766b0f380___8ef64783b829bf3180bdfc4705a155b8.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://toymania.vtexassets.com/assets/vtex.file-manager-graphql/images/a60aa776-d916-4c6b-992a-9944283bc8dd___47826d9785c23a7112d58ba375e76853.png" alt="">
-            </div>
-
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-            
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-            
+    <!-- div principal que controla a estrutura-->
+    <div class="swiper container-fluid p-0">
+        <!-- Container dos slides -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="img-fluid" src="style/img/SlideFreteGratis.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="style/img/SlideDeNatal.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="style/img/SlideDeNatal.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="style/img/SlideDeNatal.png" alt="">
+          </div>
         </div>
+        <!-- Paginação do slide -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- Botões de navegação -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 
+      <div class="container py-5" id="melhores-produtos">
+        <div class="row">
+            <h1 class="py-5 m-0 fw-bold">Melhores Ofertas</h1>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center col-xl-3 col-md-4 pb-5">
+                <div class="mp-item box-produtos img-thumbnail w-75">
+                    <img src="style/img/produtoteste.jpg" alt="" class="img-thumbnail">
+                    <p class="small m-0 text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="m-0">
+                        <p class="h3 m-0 fw-bold m-0">R$150</p>
+                        <p class="small text-success m-0">30% OFF</p>
+                    </span>
+                    <span>
+                        <button class="btn btn-success">Comprar</button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+      </div>
+      
     <script src="script/script.js"></script>
 </body>
 </html>

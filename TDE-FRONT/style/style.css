@@ -1,17 +1,22 @@
+/*Importando fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
+    /*Aplicando fonte na pag toda, tirando a margem e o padding*/
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 
-ul{list-style: none; cursor: pointer;}
-
+/*Formatação*/
 #logo{
     width: 200px;
     cursor: pointer;
 }
 
+/*Formatação*/
 nav{
     padding: 15px 30px 15px 30px;
     display: flex;
@@ -19,16 +24,24 @@ nav{
     align-items: center;
 }
 
+.nav-item{
+    margin: 7px;
+}
+
+/*Formatação*/
 .box-pesquisa{
     display: flex;
     border: 1px solid rgba(0, 0, 0, 0.81);
     padding: 5px 20px 5px 20px;
     width: 350px;
-    height: 25px;
+    height: 40px;
+    gap: 15px;
     border-radius: 20px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
+/*Formatação*/
 .box-pesquisa input{
     width: 100%;
     height: 100%;
@@ -36,7 +49,7 @@ nav{
     outline: none;
 }
 
-
+/*Formatação*/
 .box-login{
     font-size: 13px;
     cursor: pointer;
@@ -51,16 +64,31 @@ nav{
     color: aliceblue;
 }
 
+/*Efeito passar o mouse encima*/
 .box-login:hover{
     background-color: transparent;
     border: 1px solid #0474bc;
     color: #0474bc;
 }
 
+/*Formatação*/
+#btn-cadastro{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*Formatação*/
+#btn-cadastro:hover{
+    color: #0474bc;
+}
+
+/*Formatação*/
 #box-carrinho i{
     color: #0474bc;
     font-size: 25px;
 }
+
+/*Formatação*/
 #box-carrinho{
     cursor: pointer;
     justify-content: center;
@@ -69,10 +97,12 @@ nav{
     display: flex;
 }
 
+/*Formatação*/
 #box-carrinho:hover{
     color: #0474bc;
 }
 
+/*Formatação*/
 nav ul{
     cursor: pointer;
     list-style: none;
@@ -81,11 +111,12 @@ nav ul{
     align-items: center;
 }
 
+/*Efeito passar o mouse encima*/
 li:hover{
     color: #0474bc;
 }
 
-
+/*Formatação*/
 #tds-categorias{
     display: flex;
     align-items: center;
@@ -97,98 +128,72 @@ li:hover{
     font-size: 13px;
 }
 
+/*Efeito passar o mouse encima*/
 #tds-categorias:hover{
     background-color: transparent;
     border: 1px solid #0474bc;
     color: #0474bc;
 }
 
-.slider{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    overflow: hidden;
+/*Formatação*/
+.swiper {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
 }
 
-.slides{
-    width: 400%;
-    height: auto;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    position: relative;
-    width: 25%;
-    height: auto;
-    transition: 1s;
-}
-
-.slide img {
+/*Formatação*/
+.swiper-slide img{
     width: 100%;
 }
-
-.nav-manual, .nav-auto{
-    position: absolute;
-    width: 100%;
-    margin-top:29%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.manual-btn, .nav-auto div{
-    width: 10px;
-    height: 10px;
-    border: 1px solid #ffffff;
+div.swiper-button-prev, div.swiper-button-next{
+    height: 25px;
+    width: 25px;
+    padding: 30px;
+    background-color: aliceblue;
     border-radius: 50%;
-    cursor: pointer;
-    transition: .5s;
 }
 
-.manual-btn:hover{
-    background-color: #ffffff;
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
-    background-color: #ffffff;
-}
-
-#radio1:checked ~ .primeiro{
-    margin-left: 0%;
-}
-
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .primeiro{
-    margin-left: -75%;
-}
-
+/*Formatação*/
 #categorias{
     width: 100vw;
     padding-top: 50px;
     padding-bottom: 50px;
-    display: none;
+    display: none; /*O display vem none por padrão, ai quando a pessoa passar o dedo encima do "todas as categorias", vai ser chamada uma função no js, na qual vai mudar o display pra "flex". */
     justify-content: space-evenly;
+    transition: 1s;
 
 }
 
+/*Formatação*/
 #nav-categorias{
     flex-direction: column;
 }
 
+#nav-categorias-itens a:hover{
+    color: #0474bc;
+}
+
+#nav-categorias-itens{
+    gap: 10px;
+}
+
+/*Formatação*/
 #categorias ul{
     display: inline;
+}
+
+.img-thumbnail p{
+    text-align: justify;
+}
+
+.mp-item{
+    transition: transform .5s;
+}
+
+.mp-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
