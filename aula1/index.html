@@ -6,27 +6,54 @@
     <title>Caixa de Textos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body{
+        gap: 15px;
+    }
+    .vermelho{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        border-radius: 15px;
+    }
+    .verde{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        width: 100px;
+        height: 50px;
+        background-color: green;
+    }
+    .azul{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        width: 100px;
+        height: 50px;
+        background-color: blue;
+    }
+</style>
 <body>
-    
-    <form action="pagina.html" method="post">
+    <div class="azul" onmouseenter="mudacor('blue')" onmouseleave="mudacor('white')">Azul</div>
+    <div class="vermelho" onmouseenter="mudacor('red')" onmouseleave="mudacor('white')">Vermelho</div>
+    <div class="verde" onmouseenter="mudacor('green')" onmouseleave="mudacor('white')">Verde</div>
 
-        <label for="email_id">
-            Email: 
-            <input type="email" name="email" id="email_id">
-        </label>
-        
-        <label for="telefone_id">
-            Telefone:
-            <input type="tel" name="telefone" id="telefone_id">
-        <label>
+    <script>
 
-        <label for="url_id">
-            Url: 
-            <input type="url" name="url" id="url_id">
-        </label>
-        
+        function mudacor(color){
+            body = document.getElementsByTagName("BODY") [0]
+            body.style.backgroundColor = color
+        }
 
-    </form>
-    
+    </script>
+
 </body>
 </html>

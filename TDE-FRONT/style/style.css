@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+ul{list-style: none; cursor: pointer;}
+
 #logo{
     width: 200px;
     cursor: pointer;
@@ -153,7 +155,7 @@ li:hover{
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
-    background-color: #0474bc;
+    background-color: #ffffff;
 }
 
 #radio1:checked ~ .primeiro{
@@ -170,6 +172,23 @@ li:hover{
 
 #radio4:checked ~ .primeiro{
     margin-left: -75%;
+}
+
+#categorias{
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+    justify-content: space-evenly;
+
+}
+
+#nav-categorias{
+    flex-direction: column;
+}
+
+#categorias ul{
+    display: inline;
 }
 
 
