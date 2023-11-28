@@ -1,0 +1,10 @@
+{
+  "name": "TDE---FRONT-END",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "scripts": {
+    "backend": "json-server --watch dados.json --port 5000"
+  }
+}

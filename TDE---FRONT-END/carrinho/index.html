@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho
+    </title>
+    <!--Favicon da seção dos carrinhos-->
+    <link rel="shortcut icon" href="carrinho.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ff98f8ebe6.js" crossorigin="anonymous"></script>
+    <!--Abaixo o Link para o uso da API do Swiper Js, Responsável pelos sliders do site-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Abaixo o link para o uso do framework CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+    }
+    #container-main{
+        width: 100vw;
+        height: 100vh
+    }
+    .card{
+        width: 65%;
+        height: 600px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    #box-cart{
+        width: 100%;
+    }
+    h4{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+    }
+    .card-title{
+        background-color: #0474bc;
+        width: 100%;
+    }
+    .prod-cart{
+        margin-top: 5px;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+    }
+    img{
+        width: 70px;
+    }
+    #resume-buy{
+        border-radius: 5px;
+        width: 26%;
+        height: 450px;
+    }
+    #box-total p{
+        font-size: 23px;
+    }
+    #box-frete p{
+        font-size: 23px;
+    }
+    #add-Cupom input{
+        width: 60%;
+    }
+    .btnPM{
+        transform: scale(0.6);
+    }
+    #btn-lixo{
+        transform: scale(0.8)
+    }
+
+</style>
+<body>
+    <div id="alerta" class="alert alert-warning" style="display: none; position: sticky;top: 0;z-index: 9999;" role="alert"></div>
+
+    <div class="container-fluid d-flex align-items-center justify-content-around" id="container-main">
+
+        <div class="container-fluid d-flex justify-content-around"  id="box-cart">
+            <div class="card d-flex flex-column align-items-center" id="container">
+                <div class="card-title m-0 px-4 py-4 text-light">
+                    <ul class="d-flex p-0 m-0 justify-content-evenly">
+                        <li class="m-0 p-0 col-3 list-inline-item">PRODUTO</li>
+                        <li class="m-0 p-0 col-2 text-center list-inline-item">PREÇO</li>
+                        <li class="m-0 p-0 col-2 text-center list-inline-item">QUANTIDADE</li>
+                        <li class="m-0 p-0 col-2 text-center list-inline-item">TOTAL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

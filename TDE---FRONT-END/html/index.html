@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyStore</title>
+    <!--Abaixo o script para importar os icones usados no site-->
+    <script src="https://kit.fontawesome.com/ff98f8ebe6.js" crossorigin="anonymous"></script>
+    <!--Abaixo o Link para o uso da API do Swiper Js, Responsável pelos sliders do site-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Abaixo o link para o uso do framework CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg">
+    
+ 
+</head>
+<body>
+
+  <div id="alerta" class="alert alert-warning" style="display: none; position: sticky;top: 0;z-index: 9999;" role="alert">
+    
+  </div>
+
+    <nav class="navbar px-5 justify-content-around gap-5 w-100" id="nav-principal">
+        <!--NAV BAR ITENS: LOGO, INPUT DE PESQUISA, CARRINHO, E BOTÃO DE LOGIN-->
+        <label class="box-logo nav-item" for="logo" >
+            <img src="../style/img/logoTOYSTORE.png" alt="Logo escrito ToyStore" id="logo">
+        </label>
+        <label class="box-pesquisa nav-item"id="inpt-pesquisa">
+            <input type="text" id="inpt-pesquisa" placeholder="Digite o nome do produto">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+
+        <a href="../carrinho/index.html" class="nav-item d-flex justify-content-center" id="box-carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Meu Carrinho
+        </a>
+        
+        <div class="d-none" id="box-login">
+          
+        </div>
+
+        <li class="nav-item dropdown nav-link" id="box-logou" >
+            <a class="nav-link dropdown-toggle fs-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+        </li>
+        
+
+        
+
+    </nav>
+
+    
+    <nav id="nav-categorias" class="container">
+        <!--CATEGORIAS DA NAV BAR SECUNDÁRIA (NAV DAS CATEGORIAS): BOTÃO DE MAIS CATEGORIAS, E OUTRAS CATEGORIAS PRINCIPAIS-->
+
+        <nav class="navbar px-5" id="nav-categorias-itens">
+            <!--NAV BAR ITENS: LOGO, INPUT DE PESQUISA, CARRINHO, E BOTÃO DE LOGIN-->
+            <label class="box-logo nav-item" for="logo" id="tds-categorias" >
+                <i class="fa-solid fa-bars"></i>Todas as categorias
+            </label>
+
+            <a href="#" class="nav-link nav-item">
+                Meninas
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Meninos
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Personagens
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Lançamentos
+            </a>
+
+            <a href="#" class="nav-link nav-item">
+                Ofertas
+            </a>
+    
+        </nav>
+        
+
+        <div id="categorias">
+            <!--DIV QUE ABRE QUANDO PASSA O MOUSE NO LABEL DE TDS-CATERGORIAS, COM DUAS LISTAS CONTENDO AS OUTRAS CATEGORIAS-->
+            <ul>
+                <li>Brinquedos Educativos</li>
+                <li>Jogos de Tabuleiro</li>
+                <li>Bonecas e Bonecos</li>
+            </ul>
+            <ul>
+                <li>Brinquedos Eletrônicos</li>
+                <li>Quebra-cabeças</li>
+                <li>Fantasias e Acessórios</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- div principal que controla a estrutura-->
+    <div class="swiper container">
+        <!-- Container dos slides -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="img-fluid" src="../style/img/SlideFreteGratis.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="../style/img/SlideDeNatal.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="../style/img/Prancheta 1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="../style/img/SlideDeNatal.png" alt="">
+          </div>
+        </div>
+        <!-- Paginação do slide -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- Botões de navegação -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+      <div class="container py-5" id="melhores-produtos">
+        <div class="row" id="container-ofertas">
+            <h1 class="py-5 m-0 fw-bold">Melhores Ofertas</h1>
+
+            <!--as divs estão sendo colocadas pelo js-->
+
+        </div>
+      </div>
+
+
+      <div class="container-fluid px-5">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top d-flex justify-content-between">
+            <div class="col mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="../style/img/logoTOYSTORE.svg" alt="">
+              </a>
+              <p class="text-muted">© 2023</p>
+            </div>
+        
+            <div class="col mt-4">
+                
+              <h5>Seção</h5>
+              <ul class="nav flex-column ">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acessibilidade</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sobre nós</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ajuda</a></li>
+                
+              </ul>
+            </div>
+    
+          </footer>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../script/script.js" defer></script>
+</body>
+</html>

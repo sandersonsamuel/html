@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil da Conta</title>
+    <!--Abaixo o script para importar os icones usados no site-->
+    <script src="https://kit.fontawesome.com/ff98f8ebe6.js" crossorigin="anonymous"></script>
+    <!--Abaixo o Link para o uso da API do Swiper Js, Responsável pelos sliders do site-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Abaixo o link para o uso do framework CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .container-fluid{
+            width: 1200px;
+            height: 70vh;
+            border-radius: 10px;
+        }
+        .navbar{
+            width: 100%;
+            height: 120px;
+        }
+        img{
+            width: 180px;
+        }
+        .box-info{
+            height: calc(100% - 120px);
+            width: 100%;
+        }
+        .container-fluid{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        #infocard{
+            background-color: aqua;
+            width: 600px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="alerta" class="alert alert-success m-0" style="display: none; position: sticky;top: 0;z-index: 9999;" role="alert"></div>
+    
+    <div class="container-fluid">
+        <nav class="navbar px-5 bg-dark-subtle">
+            <a href="/html/index.html" class="nav-item">
+                <img src="/style/img/logoTOYSTORE.svg" alt="Logo escrito ToyStore com toy na cor rosa, e store na cor azul">
+            </a>
+    
+            <div class="nav-item">
+                <h2>Perfil do Usuário</h2>
+            </div>
+        </nav>
+    
+        <div class="box-info d-flex justify-content-center align-items-center" id="cardInfo">
+            
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

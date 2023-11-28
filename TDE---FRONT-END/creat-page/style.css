@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card{
+    background-color: rgb(231, 230, 230);
+    transform: scale(1.1);
+    width: 400px;
+}
+
+.other-login button{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #234053;
+    font-size: 30px;
+}
+
+.other-login button:hover{
+    transform: scale(1.3);
+}
+
+body img{
+    width: 100px;
+}
+
+#erroCriar{
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 16px;
+    text-align: center;
+}
+
